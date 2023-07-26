@@ -1,4 +1,7 @@
----
+docker stop alist
+docker rm alist
+docker pull xhofe/alist:latest
+docker run -d –restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 –name=”alist” xhofe/alist:latest---
 title: Introduction
 index: false
 icon: creative
